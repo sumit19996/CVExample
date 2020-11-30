@@ -1,0 +1,8 @@
+<% content_for :head do %>
+<title>Show Employee</title>
+<% end %>
+<h2>Details :</h2>
+<%= render 'emp_details' %>
+<h2>Addresses :</h2>
+<%= render 'emp_addresses' %>
+<h2><%= link_to 'List', employees_path %></h2>

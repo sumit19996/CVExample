@@ -1,0 +1,17 @@
+<%= form_with(model: [ @employee, @employee.employee_details.build ], local: true) do |form| %>
+  <p>
+    <%= form.label :address %><br>
+    <%= form.text_field :address %>
+  </p>
+  <p>
+    <%= form.label :city %><br>
+    <%= form.text_area :city %>
+  </p>
+  <p>
+    <%= form.label :pincode %><br>
+    <%= form.text_area :pincode %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>

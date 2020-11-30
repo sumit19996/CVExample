@@ -1,0 +1,9 @@
+<% content_for :head do %>
+  <title>Edit Employee</title>
+<% end %>
+<% @name="Sengar" %>
+<h1>Edit Employee</h1>
+<%= render 'form', abc: @name  %>
+<h2>Add Address:</h2>
+<%= render 'form_for_adding_address' %>
+<%= link_to 'Back', employees_path %>

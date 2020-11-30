@@ -1,0 +1,12 @@
+<% content_for :head do %>
+  <title>New Employee</title>
+<% end %>
+<% @name="Sumit" %>
+<% flash.each do |type, msg| %>
+  <div style="color: red;font-size: 20px	">
+    <%= msg %>
+  </div>
+<% end %>
+<h1>New Employee</h1>
+<%= render 'form', abc: @name%>
+<%= link_to 'Back', employees_path %>

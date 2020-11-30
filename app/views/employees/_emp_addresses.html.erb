@@ -1,0 +1,14 @@
+<table>
+	<tr>
+		<th>Address</th>
+		<th>City</th>
+		<th>Pincode</th>
+	</tr>
+	<% @employee.employee_details.each do |emp| %>
+	<tr>
+		<td><%= emp.address %></td>
+		<td><%= emp.city %></td>
+		<td><%= emp.pincode %></td>
+	</tr>
+	<% end %>
+</table>
